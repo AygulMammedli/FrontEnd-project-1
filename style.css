@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-image: url("image/header-img.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-top: 30px;
+}
+
+.menu {
+  font-size: 30px;
+  color: #fff;
+}
+
+#section-head h1 {
+  margin-top: 215px;
+  font: 300 52px "Open Sans",sans-serif;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#section-head form {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+
+#section-head input {
+  font: 400 16px "Open Sans",sans-serif;
+  width: 325px;
+  height: 40px;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  color: #8b8b8b;
+  padding-left: 15px;
+}
+
+#section-head button {
+  font: 700 16px "Open Sans",sans-serif;
+  width: 140px;
+  background-color: #fd4f32;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#section-top {
+  background-color: #eee;
+  padding-bottom: 70px;
+}
+
+#section-top h2 {
+  font: 400 16px "Montserrat",sans-serif;
+  letter-spacing: 0px;
+  color: #323232;
+  padding-top: 60px;
+}
+
+#section-top .container > p {
+  font: 400 15px "Open Sans",sans-serif;
+  letter-spacing: 0px;
+  color: #8b8b8b;
+  margin-top: 15px;
+}
+
+#img-top {
+  display: flex;
+  margin-top: 35px;
+}
+
+.price {
+  width: 240px;
+  position: relative;
+}
+
+.price span {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.top-img {
+  background-color: #fff;
+  margin-right: 15px;
+  border-bottom: 2px solid #e1dfd8;
+}
+
+.top-img h3 {
+  font: 400 14px "Montserrat",sans-serif;
+  letter-spacing: 0px;
+  color: #323232;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.top-img p {
+  font: 400 13px/19px "Open Sans",sans-serif;
+  color: #696969;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  width: 200px;
+}
+
+#info {
+}
+
+#info .container h2 {
+  font: 300 52px "Open Sans",sans-serif;
+  letter-spacing: 2px;
+  color: #323232;
+  margin-top: 80px;
+}
+
+#services {
+  display: flex;
+}
+
+.service {
+  margin-right: 70px;
+}
+
+.service h3 {
+  font: 400 15px "Open Sans",sans-serif;
+  letter-spacing: 0px;
+  color: #8b8b8b;
+  margin-top: 60px;
+}
+
+.service p {
+  font: 400 15px/22px "Open Sans",sans-serif;
+  letter-spacing: 0;
+  color: #8b8b8b;
+  margin-top: 20px;
+}
+
+#subscripbe {
+  padding-bottom: 80px;
+}
+
+#subscripbe h4 {
+  font: 400 16px "Open Sans",sans-serif;
+  letter-spacing: 0;
+  color: #323232;
+  text-align: center;
+  margin-top: 75px;
+  text-transform: uppercase;
+}
+
+#subscripbe form {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+
+#subscripbe input {
+  width: 325px;
+  height: 40px;
+  outline: none;
+  border: none;
+  font: 400 16px "Open Sans",sans-serif;
+  letter-spacing: 1px;
+  color: #8b8b8b;
+  padding-left: 15px;
+  background-color: #eee;
+}
+
+#subscripbe button {
+  width: 140px;
+  background-color: #fd4f32;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font: 700 16px "Open Sans",sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+footer {
+  background-color: #eee;
+  padding: 30px 0px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+}
+
+.copyright {
+  font: 400 14px/22px "Open Sans",sans-serif;
+  letter-spacing: 0;
+  color: #8b8b8b;
+}
+
+nav {
+  font: 400 14px "Open Sans",sans-serif;
+  letter-spacing: 0;
+  color: #323232;
+  text-align: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #606060;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #img-top,
+  #services {
+    flex-direction: column;
+  }
+
+  footer .container {
+    flex-direction: column-reverse;
+  }
+
+  ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  #img-top img,
+  .top-img p,
+  .price {
+    width: 100%;
+  }
+
+  .top-img {
+    margin-top: 20px;
+  }
+
+  #sevices {
+    text-align: center;
+  }
+
+  .service {
+    margin-right: 0px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  nav {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  *{
+    margin: -0.5px;
+  }
+  #section-top .container{
+     margin-left: 15px;
+  }
+  footer .container {
+   margin-left: -45px;
+}
+}
+
